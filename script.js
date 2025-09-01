@@ -102,3 +102,8 @@ function smsFallback() {
     fetch(`https://api.ntc.com.np/sms?to=${number}&msg=Profile fixes: 1. Add GMT+5:45 2. Remove PayPal`);
   }
 }
+// Add this at the top of analyzeProfile() function
+if (!text.trim()) {
+  alert("कृपया पहिले तपाईंको प्रोफाइल पेस्ट गर्नुहोस्!");
+  return;
+}
