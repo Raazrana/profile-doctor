@@ -3,41 +3,341 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NepaliFreelancer Profile Doctor</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <title>NepaliFreelancer Profile Doctor | Upwork Profile Fixer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f8f9fa;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .header {
+      background: #e60014;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .header h1 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .container {
+      background: white;
+      padding: 25px;
+      margin: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      font-size: 22px;
+      color: #e60014;
+      margin-bottom: 20px;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 120px;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 16px;
+      margin: 10px 0;
+      resize: vertical;
+    }
+
+    .btn-primary {
+      background: #e60014;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+      font-weight: 600;
+      margin: 10px 0;
+    }
+
+    .btn-primary:hover {
+      background: #cc0011;
+    }
+
+    .premium-offer {
+      background: #fff8e1;
+      padding: 15px;
+      border-radius: 6px;
+      margin-top: 20px;
+      border: 1px solid #ffeb3b;
+    }
+
+    .premium-offer h3 {
+      color: #e60014;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .premium-offer p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .fix-item {
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 4px;
+      background: #f8f9fa;
+      border-left: 4px solid #0066b3;
+    }
+
+    .fix-item.critical {
+      background: #ffebee;
+      border-left-color: #f44336;
+    }
+
+    .fix-item.high {
+      background: #fff8e1;
+      border-left-color: #ff9800;
+    }
+
+    .fix-item.success {
+      background: #e8f5e9;
+      border-left-color: #4caf50;
+    }
+
+    .share-options {
+      margin-top: 15px;
+    }
+
+    .viber-share {
+      display: block;
+      background: #665CAC;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      border-radius: 4px;
+      text-decoration: none;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .copy-link {
+      width: 100%;
+      background: #25D366;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    /* QR Code Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 300px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: -10px;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .qr-code {
+      width: 100%;
+      max-width: 200px;
+      margin: 15px auto;
+    }
+  </style>
 </head>
 <body>
-  <!-- Language Toggle -->
-  <div class="lang-toggle">
-    <button onclick="toggleLang()">नेपाली</button>
+  <!-- Header -->
+  <div class="header">
+    <h1>NepaliFreelancer Profile Doctor</h1>
   </div>
 
   <div class="container">
-    <h1>Fix Your Upwork Profile Rejections</h1>
+    <h2>Fix Your Upwork Profile Rejections</h2>
     
     <textarea id="profile-input" placeholder="Paste your Upwork profile here..."></textarea>
     
     <button onclick="analyzeProfile()" class="btn-primary">ANALYZE PROFILE</button>
 
     <div id="results" style="display:none;">
-      <h2>Critical Fixes Needed</h2>
+      <h3>Critical Fixes Needed</h3>
       <div id="fixes-list"></div>
       
       <div class="premium-offer">
         <h3>Get Full Fix with Premium (Rs. 99)</h3>
         <p>Auto-apply fixes + IRD tax report + Priority support</p>
-        <button onclick="openKhalti()" class="btn-primary">PAY WITH KHATI</button>
+        <button onclick="openKhaltiQR()" class="btn-primary">PAY WITH KHATI</button>
         
-        <!-- Viber Share Button -->
-        <div class="viber-share">
-          <a href="viber://forward?text=Check%20your%20Upwork%20profile:%20https://raazrana.github.io/profile-doctor" 
-             style="color:#fff; text-align:center; display:block; margin-top:15px;">
-            💬 Share on Viber
+        <div class="share-options">
+          <!-- Web Share -->
+          <a href="https://viber.com/share?text=Free%20tool%20for%20Nepali%20freelancers%3A%20https%3A%2F%2Fraazrana.github.io%2Fprofile-doctor" 
+             target="_blank" 
+             class="viber-share">
+             💬 Share on Viber
           </a>
+          
+          <!-- Copy Link -->
+          <button onclick="copyLink()" class="copy-link">
+             📋 Copy Link (All Apps)
+          </button>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>© 2024 NepaliFreelancer Profile Doctor</p>
+    <p>Contact: +977-98XXXXXXXX (Viber/WhatsApp)</p>
+  </div>
+
+  <!-- Khalti QR Modal -->
+  <div id="khaltiModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeKhaltiQR()">&times;</span>
+      <h3>Pay with Khalti</h3>
+      <p>Scan QR Code to pay Rs. 99</p>
+      <img src="https://i.imgur.com/0yZ0yZg.png" alt="Khalti QR Code" class="qr-code">
+      <p style="font-size:14px; margin-top:10px;">After payment, save the transaction ID and message us on Viber</p>
+    </div>
+  </div>
+
+  <script>
+    // Simple analysis function
+    function analyzeProfile() {
+      const text = document.getElementById('profile-input').value;
+      const results = document.getElementById('results');
+      const fixesList = document.getElementById('fixes-list');
+      
+      if (!text.trim()) {
+        alert("कृपया तपाईंको Upwork प्रोफाइल पेस्ट गर्नुहोस्!");
+        return;
+      }
+
+      // Show results section
+      results.style.display = "block";
+
+      // Clear previous results
+      fixesList.innerHTML = "";
+
+      // Nepal-specific checks
+      let hasFixes = false;
+
+      // Check 1: Address format
+      if (text.includes("Kathmandu") && !text.includes("GMT+5:45")) {
+        const item = document.createElement('div');
+        item.className = 'fix-item critical';
+        item.innerHTML = '❌ <b>ठेगाना फर्म्याट ठीक गर्नुहोस्:</b> "Kathmandu" लाई "Kathmandu, Nepal (GMT+5:45)" बनाउनुहोस्';
+        fixesList.appendChild(item);
+        hasFixes = true;
+      }
+
+      // Check 2: PayPal mention
+      if (text.toLowerCase().includes("paypal")) {
+        const item = document.createElement('div');
+        item.className = 'fix-item high';
+        item.innerHTML = '❌ <b>PayPal हटाउनुहोस्:</b> Upwork ले PayPal उल्लेख गर्ने प्रोफाइल अस्वीकार गर्छ (Wise वा Bank Transfer प्रयोग गर्नुहोस्)';
+        fixesList.appendChild(item);
+        hasFixes = true;
+      }
+
+      // Check 3: No contact info warning
+      if (!text.match(/@|\d{10}|viber|whatsapp/i)) {
+        const item = document.createElement('div');
+        item.className = 'fix-item';
+        item.innerHTML = '⚠️ <b>सम्पर्क जानकारी थप्नुहोस्:</b> विश्वास बढाउन इमेल वा फोन नम्बर थप्नुहोस्';
+        fixesList.appendChild(item);
+        hasFixes = true;
+      }
+
+      // If no issues found
+      if (!hasFixes) {
+        const item = document.createElement('div');
+        item.className = 'fix-item success';
+        item.innerHTML = '✅ <b>कुनै गम्भीर समस्या छैन!</b> तपाईंको प्रोफाइल राम्रो छ।';
+        fixesList.appendChild(item);
+      }
+    }
+
+    // Khalti QR Code Functions
+    function openKhaltiQR() {
+      document.getElementById('khaltiModal').style.display = 'block';
+    }
+
+    function closeKhaltiQR() {
+      document.getElementById('khaltiModal').style.display = 'none';
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function(event) {
+      const modal = document.getElementById('khaltiModal');
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    }
+
+    // Copy link functionality
+    function copyLink() {
+      const url = "https://raazrana.github.io/profile-doctor";
+      navigator.clipboard.writeText(url).then(() => {
+        alert("लिङ्क कपी गरियो! यसलाई Viber, WhatsApp, वा Facebook मा साझा गर्नुहोस्।");
+      }).catch(err => {
+        prompt("यो लिङ्क कपी गर्नुहोस्:", url);
+      });
+    }
+  </script>
 </body>
 </html>
