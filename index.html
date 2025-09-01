@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NepaliFreelancer Profile Doctor | तपाईंको Upwork प्रोफाइल जाँच गर्नुहोस्</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Preconnect for Nepal Telecom speed -->
+  <link rel="preconnect" href="https://khalti.com" crossorigin>
+</head>
+<body>
+  <!-- Language Toggle (Nepali First!) -->
+  <div class="lang-toggle">
+    <button onclick="setLang('ne')">नेपाली</button> | 
+    <button onclick="setLang('en')">English</button>
+  </div>
+
+  <div class="container">
+    <h1 data-en="Fix Your Upwork Profile Rejections" 
+        data-ne="Upwork प्रोफाइल अस्वीकृति समाधान गर्नुहोस्">
+      Fix Your Upwork Profile Rejections
+    </h1>
+    
+    <textarea id="profile-input" 
+              placeholder="Paste your Upwork profile here..."
+              data-en="Paste your Upwork profile here..."
+              data-ne="तपाईंको Upwork प्रोफाइल यहाँ पेस्ट गर्नुहोस्..."></textarea>
+    
+    <button onclick="analyzeProfile()" class="btn-primary">
+      <span data-en="ANALYZE PROFILE" data-ne="प्रोफाइल विश्लेषण गर्नुहोस्">ANALYZE PROFILE</span>
+    </button>
+
+    <div id="results" class="hidden">
+      <h2 data-en="Critical Fixes Needed" data-ne="आवश्यक समाधानहरू">
+        Critical Fixes Needed
+      </h2>
+      
+      <div id="fixes-list"></div>
+      
+      <div class="premium-offer">
+        <h3 data-en="Get Full Fix with Premium (Rs. 99)" 
+            data-ne="प्रीमियममा पूर्ण समाधान पाउनुहोस् (रु. ९९)">
+          Get Full Fix with Premium (Rs. 99)
+        </h3>
+        <p data-en="Auto-apply fixes + IRD tax report + Priority support" 
+           data-ne="स्वतः समाधान + IRD कर प्रतिवेदन + प्राथमिकता समर्थन">
+          Auto-apply fixes + IRD tax report + Priority support
+        </p>
+        <button onclick="openKhalti()" class="btn-primary">
+          <span data-en="PAY WITH KHATI" data-ne="KHATI ले तिर्नुहोस्">PAY WITH KHATI</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Khalti Payment Modal (Pre-configured for Nepal) -->
+  <script src="khalti-sandbox.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
