@@ -47,7 +47,22 @@ textarea {
   margin: 10px 0;
   border-radius: 4px;
 }
-
+.viber-share-container {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+.viber-btn {
+  display: inline-block;
+  background: #59267C;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
 .fix-item.critical { background: #ffebee; border-left: 4px solid #f44336; }
 .fix-item.high { background: #fff8e1; border-left: 4px solid #ffc107; }
 .fix-item.medium { background: #e8f5e9; border-left: 4px solid #4caf50; }
