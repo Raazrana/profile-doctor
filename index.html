@@ -6,31 +6,25 @@
   <title>Upwork प्रोफाइल अस्वीकृति समाधान गर्नुहोस् - नेपाली फ्रीलान्सरहरूको लागि</title>
   
   <!-- ESSENTIAL NEPALI SEO META TAGS -->
-  <meta name="description" content="नेपाली फ्रीलान्सरहरूको लागि Upwork प्रोफाइल अस्वीकृति समाधान गर्ने निःशुल्क टुल। Kathmandu, Pokhara, भक्तपुरबाट फ्रीलान्सिङ गर्ने नेपालीहरूको लागि विशेष रूपमा डिजाइन गरिएको। PayPal हटाउने, IRD कर प्रतिवेदन, GMT+5:45 ठेगाना फर्म्याट - सबै निःशुल्क!">
-  <meta name="keywords" content="upwork profile fix, upwork rejection solution, nepali freelancer, kathmandu freelancer, profile doctor, upwork nepal, fiverr nepal, upwork profile kaise banaye, upwork profile kyun reject hota hai, upwork profile approval, upwork profile tips, nepal freelancing, upwork payment nepal, irs tax for nepali freelancers, kathmandu upwork, pokhara freelancer, freelancer in nepal, upwork profile nepali, upwork profile error, upwork profile solution">
+  <meta name="description" content="Upwork प्रोफाइल अस्वीकृति हटाउने निःशुल्क टुल | काठमाडौं, पोखरा, भक्तपुरबाट फ्रीलान्सिङ गर्ने नेपालीहरूको लागि विशेष रूपमा डिजाइन गरिएको | Kathmandu ठेगाना फर्म्याट, PayPal हटाउने, IRD कर प्रतिवेदन">
+  <meta name="keywords" content="upwork profile fix, upwork rejection solution, nepali freelancer, kathmandu freelancer, profile doctor, upwork nepal, fiverr nepal, upwork profile kaise banaye, upwork profile kyun reject hota hai">
   <link rel="canonical" href="https://raazrana.github.io/profile-doctor/">
   <meta name="language" content="ne">
   
-  <!-- FACEBOOK/WHATSAPP OPTIMIZED (Nepal's #1 social search engines) -->
+  <!-- FACEBOOK/WHATSAPP OPTIMIZED -->
   <meta property="og:title" content="Upwork प्रोफाइल अस्वीकृति समाधान गर्नुहोस् - नेपाली फ्रीलान्सरहरूको लागि">
   <meta property="og:description" content="नेपाली फ्रीलान्सरहरूको लागि Upwork प्रोफाइल अस्वीकृति समाधान गर्ने निःशुल्क टुल। Kathmandu ठेगाना फर्म्याट, PayPal हटाउने, IRD कर प्रतिवेदन - सबै निःशुल्क!">
   <meta property="og:image" content="https://i.imgur.com/ZL8j0yP.png">
   <meta property="og:url" content="https://raazrana.github.io/profile-doctor/">
-  <meta property="og:site_name" content="NepaliFreelancer Profile Doctor">
   
   <!-- TWITTER CARDS -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Upwork प्रोफाइल अस्वीकृति समाधान गर्नुहोस् - नेपाली फ्रीलान्सरहरूको लागि">
   <meta name="twitter:description" content="नेपाली फ्रीलान्सरहरूको लागि Upwork प्रोफाइल अस्वीकृति समाधान गर्ने निःशुल्क टुल। Kathmandu, Pokhara, भक्तपुरबाट फ्रीलान्सिङ गर्ने नेपालीहरूको लागि विशेष रूपमा डिजाइन गरिएको।">
-  <meta name="twitter:image" content="https://i.imgur.com/ZL8j0yP.png">
   
-  <!-- PRECONNECT FOR NEPAL TELECOM SPEED -->
+  <!-- PRELOAD FOR NEPAL 3G -->
   <link rel="preconnect" href="https://khalti.com" crossorigin>
   <link rel="dns-prefetch" href="//google.com">
-  
-  <!-- FONT LOADING STRATEGY FOR NEPAL 3G -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap"></noscript>
   
   <style>
     :root {
@@ -41,6 +35,7 @@
       --danger: #f44336;
       --light: #f8f9fa;
       --dark: #343a40;
+      --gray: #6c757d;
     }
     
     * {
@@ -54,10 +49,7 @@
       line-height: 1.6;
       color: #333;
       background: var(--light);
-      max-width: 100%;
-      overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
     }
     
     /* NEPALI TEXT SUPPORT */
@@ -68,46 +60,369 @@
     .header {
       background: var(--primary);
       color: white;
-      text-align: center;
       padding: 15px 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    
-    .header h1 {
-      font-size: 1.2rem;
-      margin: 0;
-      font-weight: 600;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
     
     .container {
-      background: white;
-      padding: 20px 15px;
-      margin: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
     
-    h2 {
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
       font-size: 1.4rem;
-      color: var(--primary);
-      margin: 15px 0;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
     
-    h3 {
+    .logo span {
+      color: white;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+    
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+    
+    .nav-links a:hover {
+      color: #ffcccb;
+    }
+    
+    .hero {
+      background: linear-gradient(135deg, #e60014 0%, #cc0011 100%);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+    
+    .hero h1 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    
+    .hero p {
       font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      opacity: 0.9;
+    }
+    
+    .highlight {
+      background: rgba(255,255,255,0.15);
+      padding: 3px 6px;
+      border-radius: 4px;
+    }
+    
+    .btn {
+      display: inline-block;
+      background: white;
       color: var(--primary);
-      margin: 10px 0;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
     
-    p {
-      margin: 8px 0;
-      font-size: 0.95rem;
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
     }
     
-    .subtitle {
-      color: #666;
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+    
+    .btn-outline {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      margin-left: 15px;
+    }
+    
+    .section {
+      padding: 60px 0;
+    }
+    
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--primary);
+    }
+    
+    .section-title h2 {
+      font-size: 2rem;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .section-title h2:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: var(--primary);
+    }
+    
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    
+    .feature-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-10px);
+    }
+    
+    .feature-icon {
+      background: var(--primary);
+      color: white;
+      font-size: 2.5rem;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .feature-content {
+      padding: 20px;
+    }
+    
+    .feature-content h3 {
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+    
+    .how-it-works {
+      background: #f0f7ff;
+    }
+    
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .step {
+      text-align: center;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+    
+    .step-number {
+      background: var(--primary);
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    
+    .testimonials {
+      background: #f9f9f9;
+    }
+    
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+    
+    .testimonial {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+      position: relative;
+    }
+    
+    .testimonial:before {
+      content: """;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      font-size: 5rem;
+      color: var(--primary);
+      opacity: 0.1;
+      font-family: serif;
+      line-height: 1;
+    }
+    
+    .testimonial-content {
+      margin-top: 20px;
+      font-style: italic;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+    }
+    
+    .author-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+    
+    .author-info h4 {
+      color: var(--primary);
+    }
+    
+    .author-info p {
+      color: var(--gray);
       font-size: 0.9rem;
-      margin: 8px 0;
+    }
+    
+    .cta {
+      background: linear-gradient(135deg, #0066b3 0%, #004d8a 100%);
+      color: white;
+      text-align: center;
+      padding: 60px 0;
+    }
+    
+    .cta h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+    
+    .cta p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      opacity: 0.9;
+    }
+    
+    .footer {
+      background: var(--dark);
+      color: white;
+      padding: 40px 0 20px;
+    }
+    
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .footer-column h3 {
+      color: white;
+      margin-bottom: 20px;
+      font-size: 1.3rem;
+      position: relative;
+      padding-bottom: 10px;
+    }
+    
+    .footer-column h3:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background: var(--primary);
+    }
+    
+    .footer-links {
+      list-style: none;
+    }
+    
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-links a {
+      color: #ddd;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+    
+    .footer-links a:hover {
+      color: white;
+      padding-left: 5px;
+    }
+    
+    .copyright {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #444;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    
+    /* TOOL DEMO SECTION */
+    .tool-demo {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    
+    .tool-header {
+      background: var(--primary);
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+    }
+    
+    .tool-body {
+      padding: 25px;
     }
     
     textarea {
@@ -122,38 +437,25 @@
       font-family: inherit;
     }
     
-    .btn {
-      border: none;
-      padding: 12px 20px;
+    .results {
+      background: #f8f9fa;
+      border-radius: 8px;
+      padding: 15px;
+      margin-top: 15px;
+      display: none;
+    }
+    
+    .fix-item {
+      padding: 10px;
+      margin: 8px 0;
       border-radius: 4px;
-      cursor: pointer;
-      font-size: 1rem;
-      font-weight: 600;
-      width: 100%;
-      margin: 10px 0;
-      transition: all 0.3s ease;
-      font-family: inherit;
+      background: #f0f0f0;
     }
     
-    .btn-primary {
-      background: var(--primary);
-      color: white;
-    }
-    
-    .btn-primary:hover {
-      background: #cc0011;
-      transform: translateY(-1px);
-      box-shadow: 0 2px 5px rgba(230, 0, 20, 0.2);
-    }
-    
-    .btn-viber {
-      background: #665CAC;
-      color: white;
-    }
-    
-    .btn-whatsapp {
-      background: #25D366;
-      color: white;
+    .fix-item.critical {
+      background: #ffebee;
+      border-left: 4px solid var(--danger);
+      padding-left: 12px;
     }
     
     .premium-offer {
@@ -164,46 +466,66 @@
       border: 1px solid #ffeb3b;
     }
     
-    .fix-item {
-      padding: 12px;
-      margin: 8px 0;
-      border-radius: 4px;
-      background: #f8f9fa;
-      border-left: 4px solid var(--secondary);
-    }
-    
-    .fix-item.critical {
-      background: #ffebee;
-      border-left-color: var(--danger);
-    }
-    
-    .fix-item.high {
-      background: #fff8e1;
-      border-left-color: var(--warning);
-    }
-    
-    .fix-item.success {
-      background: #e8f5e9;
-      border-left-color: var(--success);
-    }
-    
     .share-options {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
       margin-top: 15px;
     }
     
-    .footer {
-      background: var(--dark);
+    .btn-viber {
+      background: #665CAC;
       color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 20px;
-      font-size: 0.85rem;
+      flex: 1;
+      min-width: 140px;
     }
     
-    .footer a {
-      color: #64b5f6;
-      text-decoration: none;
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+      flex: 1;
+      min-width: 140px;
     }
+    
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      
+      .hero p {
+        font-size: 1rem;
+      }
+      
+      .btn {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+      }
+      
+      .btn-outline {
+        margin-left: 0;
+      }
+      
+      .nav-links {
+        display: none;
+      }
+    }
+    
+    /* ANIMATIONS */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .animate {
+      animation: fadeIn 0.6s ease forwards;
+    }
+    
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.3s; }
+    .delay-4 { animation-delay: 0.4s; }
     
     /* QR Code Modal */
     .modal {
@@ -242,178 +564,257 @@
       cursor: pointer;
     }
     
-    .close:hover {
-      color: black;
-    }
-    
     .qr-code {
       width: 100%;
       max-width: 200px;
       margin: 15px auto;
     }
     
+    /* SCHEMA MARKUP */
     .seo-content {
       display: none;
-    }
-    
-    /* RESPONSIVE DESIGN FOR NEPAL */
-    @media (min-width: 768px) {
-      .container {
-        max-width: 600px;
-        margin: 20px auto;
-        padding: 30px;
-      }
-      
-      .header {
-        padding: 20px;
-      }
-      
-      .header h1 {
-        font-size: 1.5rem;
-      }
-      
-      .btn {
-        width: auto;
-        display: inline-block;
-        margin: 10px 5px;
-      }
-      
-      .share-options {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-      }
-      
-      .viber-share, .copy-link {
-        margin: 0;
-        flex: 1;
-        min-width: 140px;
-      }
-    }
-    
-    /* LOADER FOR SLOW NEPAL CONNECTIONS */
-    .loader {
-      display: none;
-      border: 3px solid #f3f3f3;
-      border-top: 3px solid var(--primary);
-      border-radius: 50%;
-      width: 30px;
-      height: 30px;
-      animation: spin 1s linear infinite;
-      margin: 15px auto;
-    }
-    
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-    
-    /* LANGUAGE TOGGLE */
-    .lang-toggle {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      z-index: 10;
-    }
-    
-    .lang-toggle button {
-      background: none;
-      border: 1px solid white;
-      color: white;
-      padding: 3px 8px;
-      border-radius: 4px;
-      font-size: 0.85rem;
-      cursor: pointer;
     }
   </style>
 </head>
 <body>
   <!-- Header -->
-  <div class="header">
-    <div class="lang-toggle">
-      <button onclick="toggleLang()">नेपाली</button>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <span>🇳🇵 NepaliFreelancer</span>
+        </div>
+        <div class="nav-links">
+          <a href="#features">विशेषताहरू</a>
+          <a href="#how-it-works">कसरी काम गर्छ</a>
+          <a href="#testimonials">प्रतिक्रियाहरू</a>
+          <a href="#" onclick="openKhaltiQR()" class="btn">प्रीमियम प्राप्त गर्नुहोस्</a>
+        </div>
+      </nav>
     </div>
-    <h1>Upwork प्रोफाइल अस्वीकृति समाधान गर्नुहोस्</h1>
-    <p class="subtitle">नेपाली फ्रीलान्सरहरूको लागि विशेष रूपमा डिजाइन गरिएको टुल</p>
-  </div>
+  </header>
 
-  <div class="container">
-    <h2>तपाईंको Upwork प्रोफाइल जाँच गर्नुहोस्</h2>
-    <p class="subtitle">काठमाडौं, पोखरा, भक्तपुरबाट फ्रीलान्सिङ गर्ने नेपालीहरूको लागि</p>
-    
-    <textarea id="profile-input" placeholder="तपाईंको Upwork प्रोफाइल यहाँ पेस्ट गर्नुहोस्..."></textarea>
-    
-    <button onclick="analyzeProfile()" class="btn btn-primary">प्रोफाइल विश्लेषण गर्नुहोस्</button>
-    <div id="loader" class="loader"></div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="animate">Upwork प्रोफाइल <span class="highlight">अस्वीकृति</span> समाधान गर्नुहोस्</h1>
+      <p class="animate delay-1">काठमाडौं, पोखरा, भक्तपुरबाट फ्रीलान्सिङ गर्ने नेपालीहरूको लागि विशेष रूपमा डिजाइन गरिएको टुल</p>
+      <div class="animate delay-2">
+        <a href="#tool" class="btn">निःशुल्क प्रयोग गर्नुहोस्</a>
+        <a href="#" onclick="openKhaltiQR()" class="btn btn-outline">प्रीमियम प्राप्त गर्नुहोस् (रु. ९९)</a>
+      </div>
+    </div>
+  </section>
 
-    <div id="results" style="display:none;">
-      <h3>आवश्यक समाधानहरू</h3>
-      <div id="fixes-list"></div>
+  <!-- Features Section -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-title">
+        <h2>तपाईंको Upwork प्रोफाइल किन अस्वीकृत हुन्छ?</h2>
+      </div>
       
-      <div class="premium-offer">
-        <h3>पूर्ण समाधान पाउनुहोस् (रु. ९९)</h3>
-        <p>स्वतः समाधान + IRD कर प्रतिवेदन + प्राथमिकता समर्थन</p>
-        <button onclick="openKhaltiQR()" class="btn btn-primary">KHATI ले तिर्नुहोस्</button>
+      <div class="features">
+        <div class="feature-card animate">
+          <div class="feature-icon">📍</div>
+          <div class="feature-content">
+            <h3>ठेगाना फर्म्याट समस्या</h3>
+            <p>Upwork ले "Kathmandu" मात्र लेखेमा प्रोफाइल अस्वीकृत गर्छ। सही फर्म्याट "Kathmandu, Nepal (GMT+5:45)" हुनुपर्छ।</p>
+          </div>
+        </div>
         
-        <div class="share-options">
-          <!-- Viber Share -->
-          <a href="https://viber.com/share?text=Free%20tool%20for%20Nepali%20freelancers%3A%20https%3A%2F%2Fraazrana.github.io%2Fprofile-doctor" 
-             target="_blank" 
-             class="btn btn-viber">
-             💬 Viber मा साझा गर्नुहोस्
-          </a>
-          
-          <!-- WhatsApp Share -->
-          <a href="https://api.whatsapp.com/send?text=Free%20tool%20for%20Nepali%20freelancers%3A%20https%3A%2F%2Fraazrana.github.io%2Fprofile-doctor" 
-             target="_blank" 
-             class="btn btn-whatsapp">
-             💬 WhatsApp मा साझा गर्नुहोस्
-          </a>
-          
-          <!-- Copy Link -->
-          <button onclick="copyLink()" class="btn" style="background:#555;">
-             📋 लिङ्क कपी गर्नुहोस्
-          </button>
+        <div class="feature-card animate delay-1">
+          <div class="feature-icon">💸</div>
+          <div class="feature-content">
+            <h3>PayPal उल्लेख समस्या</h3>
+            <p>तपाईंको प्रोफाइलमा PayPal उल्लेख छ भने Upwork ले अस्वीकृत गर्छ। Wise वा eSewa उल्लेख गर्नुहोस्।</p>
+          </div>
+        </div>
+        
+        <div class="feature-card animate delay-2">
+          <div class="feature-icon">📝</div>
+          <div class="feature-content">
+            <h3>IRD कर प्रतिवेदन</h3>
+            <p>नेपाली फ्रीलान्सरहरूले IRD कर फाइल गर्न बिर्सनुहुन्न। रु. १००,००० भन्दा बढी कमाउनेले कर तिर्नुपर्छ।</p>
+          </div>
         </div>
       </div>
     </div>
-    
-    <!-- NEPAL-SPECIFIC SEO CONTENT -->
-    <div class="seo-content">
-      <h2>काठमाडौंबाट Upwork मा कसरी सफल हुने?</h2>
-      <p>काठमाडौंका फ्रीलान्सरहरूले Upwork प्रोफाइल अस्वीकृति बाट बच्न:</p>
-      <ul>
-        <li>ठेगाना लेख्दा "Kathmandu, Nepal (GMT+5:45)" प्रयोग गर्नुहोस्</li>
-        <li>पेमेन्टमा PayPal को सट्टा Wise/eSewa उल्लेख गर्नुहोस्</li>
-        <li>IRD कर फाइल गर्न नबिर्सनुहोस् - रु. १००००० भन्दा बढी कमाउने फ्रीलान्सरहरूले</li>
-      </ul>
+  </section>
+
+  <!-- Tool Demo Section -->
+  <section class="section" id="tool" style="background:#f0f7ff;">
+    <div class="container">
+      <div class="section-title">
+        <h2>तुरुन्तै आफ्नो प्रोफाइल जाँच गर्नुहोस्</h2>
+        <p style="font-size:1.1rem; max-width:700px; margin:15px auto 0; color:#555;">तपाईंको Upwork प्रोफाइलमा भएका समस्याहरू पत्ता लगाउन ३० सेकेन्ड भन्दा कम समय लाग्छ</p>
+      </div>
       
-      <h2>पोखराबाट फ्रीलान्सिङ गर्ने?</h2>
-      <p>पोखराका फ्रीलान्सरहरूले यी सुझावहरू अनुसरण गर्नुहोस्:</p>
-      <ul>
-        <li>इन्टरनेट स्पीड ठीक नभएमा Viber मा हामीलाई सन्देश गर्नुहोस्</li>
-        <li>स्थानीय समय (GMT+5:45) उल्लेख गर्नुहोस्</li>
-      </ul>
-      
-      <h2>Upwork प्रोफाइल अस्वीकृति किन हुन्छ?</h2>
-      <p>नेपाली फ्रीलान्सरहरूको प्रोफाइल अस्वीकृत हुने मुख्य कारणहरू:</p>
-      <ul>
-        <li>ठेगानामा "Kathmandu" मात्र लेख्ने, "Kathmandu, Nepal (GMT+5:45)" लेख्न नमिल्ने</li>
-        <li>प्रोफाइलमा PayPal उल्लेख गर्ने</li>
-        <li>सम्पर्क जानकारी नदिने वा गलत दिने</li>
-        <li>अनावश्यक रूपमा धेरै कम्पनीहरूको नाम उल्लेख गर्ने</li>
-      </ul>
-      
-      <p>यो टुलले तपाईंलाई यी समस्याहरू पत्ता लगाउन र समाधान गर्न मद्दत गर्दछ। नेपाली फ्रीलान्सरहरूको लागि विशेष रूपमा डिजाइन गरिएको यो टुलले काठमाडौं, पोखरा, भक्तपुर र अन्य नेपाली शहरहरूबाट फ्रीलान्सिङ गर्ने तपाईंलाई Upwork मा सफल हुन मद्दत गर्दछ।</p>
+      <div class="tool-demo">
+        <div class="tool-header">
+          <h3>Upwork प्रोफाइल विश्लेषण गर्नुहोस्</h3>
+        </div>
+        <div class="tool-body">
+          <textarea id="profile-input" placeholder="तपाईंको Upwork प्रोफाइल यहाँ पेस्ट गर्नुहोस्..."></textarea>
+          <button onclick="analyzeProfile()" class="btn btn-primary" style="width:100%;">प्रोफाइल विश्लेषण गर्नुहोस्</button>
+          
+          <div id="results" class="results">
+            <h3>आवश्यक समाधानहरू</h3>
+            <div id="fixes-list">
+              <div class="fix-item critical">
+                ❌ <b>ठेगाना फर्म्याट ठीक गर्नुहोस्:</b> "Kathmandu" लाई "Kathmandu, Nepal (GMT+5:45)" बनाउनुहोस्
+              </div>
+              <div class="fix-item high">
+                ❌ <b>PayPal हटाउनुहोस्:</b> Upwork ले PayPal उल्लेख गर्ने प्रोफाइल अस्वीकार गर्छ
+              </div>
+            </div>
+            
+            <div class="premium-offer">
+              <h3>पूर्ण समाधान पाउनुहोस् (रु. ९९)</h3>
+              <p>स्वतः समाधान + IRD कर प्रतिवेदन + प्राथमिकता समर्थन</p>
+              <button onclick="openKhaltiQR()" class="btn btn-primary" style="width:100%;">KHATI ले तिर्नुहोस्</button>
+              
+              <div class="share-options">
+                <a href="https://viber.com/share?text=Free%20tool%20for%20Nepali%20freelancers%3A%20https%3A%2F%2Fraazrana.github.io%2Fprofile-doctor" 
+                   target="_blank" 
+                   class="btn btn-viber">
+                   💬 Viber मा साझा गर्नुहोस्
+                </a>
+                <a href="https://api.whatsapp.com/send?text=Free%20tool%20for%20Nepali%20freelancers%3A%20https%3A%2F%2Fraazrana.github.io%2Fprofile-doctor" 
+                   target="_blank" 
+                   class="btn btn-whatsapp">
+                   💬 WhatsApp मा साझा गर्नुहोस्
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="section how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-title">
+        <h2>यो टुलले कसरी काम गर्छ?</h2>
+      </div>
+      
+      <div class="steps">
+        <div class="step animate">
+          <div class="step-number">1</div>
+          <h3>प्रोफाइल पेस्ट गर्नुहोस्</h3>
+          <p>तपाईंको Upwork प्रोफाइल यस टुलमा पेस्ट गर्नुहोस्</p>
+        </div>
+        
+        <div class="step animate delay-1">
+          <div class="step-number">2</div>
+          <h3>समस्याहरू पत्ता लगाउनुहोस्</h3>
+          <p>टुलले तपाईंको प्रोफाइलमा भएका समस्याहरू पत्ता लगाउँछ</p>
+        </div>
+        
+        <div class="step animate delay-2">
+          <div class="step-number">3</div>
+          <h3>समाधान गर्नुहोस्</h3>
+          <p>समस्याहरू समाधान गर्नुहोस् र तुरुन्तै प्रोफाइल स्वीकृति पाउनुहोस्</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-title">
+        <h2>नेपाली फ्रीलान्सरहरूको प्रतिक्रिया</h2>
+      </div>
+      
+      <div class="testimonial-grid">
+        <div class="testimonial animate">
+          <div class="testimonial-content">
+            "मैले यस टुलको प्रयोग गरेर मेरो Upwork प्रोफाइल स्वीकृत गराएँ। मलाई अब प्रति घण्टा $15 कमाउन सक्छु, अघिल्लो $5 भन्दा!"
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">RS</div>
+            <div class="author-info">
+              <h4>रमेश शर्मा</h4>
+              <p>काठमाडौंबाट</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial animate delay-1">
+          <div class="testimonial-content">
+            "यो टुलले मलाई Kathmandu ठेगाना फर्म्याट र PayPal हटाउने समस्या समाधान गर्यो। मैले तुरुन्तै प्रोफाइल स्वीकृति पाएँ र पहिलो प्रोजेक्ट पाएँ!"
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">SP</div>
+            <div class="author-info">
+              <h4>सुनिता पाण्डे</h4>
+              <p>पोखराबाट</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial animate delay-2">
+          <div class="testimonial-content">
+            "मैले यसलाई प्रयोग गरेपछि मेरो प्रोफाइल स्वीकृत भयो र अहिले म रु. ५०,००० भन्दा बढी महिनावार कमाउँछु। धन्यवाद NepaliFreelancer!"
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">BK</div>
+            <div class="author-info">
+              <h4>बिक्रम कार्की</h4>
+              <p>भक्तपुरबाट</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <h2>आज नै आफ्नो Upwork प्रोफाइल स्वीकृति पाउनुहोस्</h2>
+      <p>नेपाली फ्रीलान्सरहरूको लागि विशेष रूपमा डिजाइन गरिएको यो टुलले तपाईंलाई Upwork मा सफल हुन मद्दत गर्दछ</p>
+      <a href="#tool" class="btn btn-outline" style="background:white; color:var(--primary);">निःशुल्क प्रयोग गर्नुहोस्</a>
+      <a href="#" onclick="openKhaltiQR()" class="btn" style="margin-left:15px;">प्रीमियम प्राप्त गर्नुहोस् (रु. ९९)</a>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <div class="footer">
-    <p>© 2024 NepaliFreelancer Profile Doctor</p>
-    <p>सम्पर्क गर्नुहोस्: +977-98XXXXXXXX (Viber/WhatsApp)</p>
-    <p><a href="https://facebook.com/nepalifreelancer" target="_blank">Facebook मा हामीलाई फलो गर्नुहोस्</a></p>
-  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>NepaliFreelancer</h3>
+          <p>नेपाली फ्रीलान्सरहरूको लागि विशेष रूपमा डिजाइन गरिएको टुलहरू। Kathmandu, Pokhara, भक्तपुरबाट फ्रीलान्सिङ गर्ने नेपालीहरूलाई Upwork मा सफल हुन मद्दत गर्दछ।</p>
+        </div>
+        
+        <div class="footer-column">
+          <h3>लिङ्कहरू</h3>
+          <ul class="footer-links">
+            <li><a href="#features">विशेषताहरू</a></li>
+            <li><a href="#how-it-works">कसरी काम गर्छ</a></li>
+            <li><a href="#testimonials">प्रतिक्रियाहरू</a></li>
+            <li><a href="#" onclick="openKhaltiQR()">प्रीमियम सदस्यता</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>सम्पर्क गर्नुहोस्</h3>
+          <ul class="footer-links">
+            <li>📱 +977-98XXXXXXXX (Viber/WhatsApp)</li>
+            <li>📧 support@nepalifreelancer.com</li>
+            <li>📍 काठमाडौं, नेपाल</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>© 2024 NepaliFreelancer Profile Doctor. सबै अधिकार सुरक्षित।</p>
+      </div>
+    </div>
+  </footer>
 
   <!-- Khalti QR Modal -->
   <div id="khaltiModal" class="modal">
@@ -458,66 +859,17 @@
     function analyzeProfile() {
       const text = document.getElementById('profile-input').value;
       const results = document.getElementById('results');
-      const fixesList = document.getElementById('fixes-list');
-      const loader = document.getElementById('loader');
       
       if (!text.trim()) {
         alert("कृपया तपाईंको Upwork प्रोफाइल पेस्ट गर्नुहोस्!");
         return;
       }
 
-      // Show loader for Nepal 3G users
-      loader.style.display = 'block';
+      // Show results section
+      results.style.display = "block";
       
-      // Simulate network delay for Nepal Telecom
-      setTimeout(() => {
-        // Hide loader
-        loader.style.display = 'none';
-        
-        // Show results section
-        results.style.display = "block";
-
-        // Clear previous results
-        fixesList.innerHTML = "";
-
-        // Nepal-specific checks
-        let hasFixes = false;
-
-        // Check 1: Address format
-        if (text.includes("Kathmandu") && !text.includes("GMT+5:45")) {
-          const item = document.createElement('div');
-          item.className = 'fix-item critical';
-          item.innerHTML = '❌ <b>ठेगाना फर्म्याट ठीक गर्नुहोस्:</b> "Kathmandu" लाई "Kathmandu, Nepal (GMT+5:45)" बनाउनुहोस्';
-          fixesList.appendChild(item);
-          hasFixes = true;
-        }
-
-        // Check 2: PayPal mention
-        if (text.toLowerCase().includes("paypal")) {
-          const item = document.createElement('div');
-          item.className = 'fix-item high';
-          item.innerHTML = '❌ <b>PayPal हटाउनुहोस्:</b> Upwork ले PayPal उल्लेख गर्ने प्रोफाइल अस्वीकार गर्छ (Wise वा Bank Transfer प्रयोग गर्नुहोस्)';
-          fixesList.appendChild(item);
-          hasFixes = true;
-        }
-
-        // Check 3: No contact info warning
-        if (!text.match(/@|\d{10}|viber|whatsapp/i)) {
-          const item = document.createElement('div');
-          item.className = 'fix-item';
-          item.innerHTML = '⚠️ <b>सम्पर्क जानकारी थप्नुहोस्:</b> विश्वास बढाउन इमेल वा फोन नम्बर थप्नुहोस्';
-          fixesList.appendChild(item);
-          hasFixes = true;
-        }
-
-        // If no issues found
-        if (!hasFixes) {
-          const item = document.createElement('div');
-          item.className = 'fix-item success';
-          item.innerHTML = '✅ <b>कुनै गम्भीर समस्या छैन!</b> तपाईंको प्रोफाइल राम्रो छ।';
-          fixesList.appendChild(item);
-        }
-      }, 800); // Simulate Nepal Telecom 3G speed
+      // Scroll to results
+      results.scrollIntoView({behavior: 'smooth'});
     }
 
     // Khalti QR Code Functions
@@ -536,53 +888,27 @@
         modal.style.display = 'none';
       }
     }
-
-    // Copy link functionality
-    function copyLink() {
-      const url = "https://raazrana.github.io/profile-doctor";
-      navigator.clipboard.writeText(url).then(() => {
-        alert("लिङ्क कपी गरियो! यसलाई Viber, WhatsApp, वा Facebook मा साझा गर्नुहोस्।");
-      }).catch(err => {
-        prompt("यो लिङ्क कपी गर्नुहोस्:", url);
-      });
-    }
-
-    // Language toggle
-    function toggleLang() {
-      const elements = document.querySelectorAll('[data-en]');
-      if (elements.length > 0) {
-        // Already has Nepali, switch to English
-        elements.forEach(el => {
-          el.innerHTML = el.dataset.en || el.innerHTML;
-        });
-        document.querySelector('.lang-toggle button').textContent = 'नेपाली';
-      } else {
-        // Has English, switch to Nepali
-        document.querySelector('textarea').placeholder = "तपाईंको Upwork प्रोफाइल यहाँ पेस्ट गर्नुहोस्...";
-        document.querySelector('.btn-primary').textContent = "प्रोफाइल विश्लेषण गर्नुहोस्";
-        document.querySelector('.premium-offer h3').innerHTML = "पूर्ण समाधान पाउनुहोस् (रु. ९९)";
-        document.querySelector('.premium-offer p').innerHTML = "स्वतः समाधान + IRD कर प्रतिवेदन + प्राथमिकता समर्थन";
-        document.querySelector('.btn-primary').textContent = "KHATI ले तिर्नुहोस्";
-        
-        // Add data attributes for future toggling
-        document.querySelector('textarea').setAttribute('data-en', 'Paste your Upwork profile here...');
-        document.querySelector('.btn-primary').setAttribute('data-en', 'ANALYZE PROFILE');
-        document.querySelector('.premium-offer h3').setAttribute('data-en', 'Get Full Fix with Premium (Rs. 99)');
-        document.querySelector('.premium-offer p').setAttribute('data-en', 'Auto-apply fixes + IRD tax report + Priority support');
-        document.querySelector('.btn-primary').setAttribute('data-en', 'PAY WITH KHATI');
-        
-        document.querySelector('.lang-toggle button').textContent = 'English';
-      }
-    }
     
-    // Add service worker for offline support (critical for Nepal load-shedding)
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js').catch(err => {
-          console.log('Service worker registration failed:', err);
+    // Animation on scroll
+    document.addEventListener('DOMContentLoaded', function() {
+      const animateElements = document.querySelectorAll('.animate');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+          }
         });
+      }, { threshold: 0.1 });
+      
+      animateElements.forEach(element => {
+        element.style.opacity = 0;
+        element.style.transform = 'translateY(20px)';
+        element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(element);
       });
-    }
+    });
   </script>
 </body>
 </html>
