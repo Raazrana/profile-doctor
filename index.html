@@ -3,66 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NepaliFreelancer Profile Doctor | तपाईंको Upwork प्रोफाइल जाँच गर्नुहोस्</title>
+  <title>NepaliFreelancer Profile Doctor</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Preconnect for Nepal Telecom speed -->
-  <link rel="preconnect" href="https://khalti.com" crossorigin>
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Language Toggle (Nepali First!) -->
+  <!-- Language Toggle -->
   <div class="lang-toggle">
-    <button onclick="setLang('ne')">नेपाली</button> | 
-    <button onclick="setLang('en')">English</button>
+    <button onclick="toggleLang()">नेपाली</button>
   </div>
 
   <div class="container">
-    <h1 data-en="Fix Your Upwork Profile Rejections" 
-        data-ne="Upwork प्रोफाइल अस्वीकृति समाधान गर्नुहोस्">
-      Fix Your Upwork Profile Rejections
-    </h1>
+    <h1>Fix Your Upwork Profile Rejections</h1>
     
-    <textarea id="profile-input" 
-              placeholder="Paste your Upwork profile here..."
-              data-en="Paste your Upwork profile here..."
-              data-ne="तपाईंको Upwork प्रोफाइल यहाँ पेस्ट गर्नुहोस्..."></textarea>
+    <textarea id="profile-input" placeholder="Paste your Upwork profile here..."></textarea>
     
-    <button onclick="analyzeProfile()" class="btn-primary">
-      <span data-en="ANALYZE PROFILE" data-ne="प्रोफाइल विश्लेषण गर्नुहोस्">ANALYZE PROFILE</span>
-    </button>
+    <button onclick="analyzeProfile()" class="btn-primary">ANALYZE PROFILE</button>
 
-    <div id="results" class="hidden">
-      <h2 data-en="Critical Fixes Needed" data-ne="आवश्यक समाधानहरू">
-        Critical Fixes Needed
-      </h2>
-      
+    <div id="results" style="display:none;">
+      <h2>Critical Fixes Needed</h2>
       <div id="fixes-list"></div>
       
       <div class="premium-offer">
-        <h3 data-en="Get Full Fix with Premium (Rs. 99)" 
-            data-ne="प्रीमियममा पूर्ण समाधान पाउनुहोस् (रु. ९९)">
-          Get Full Fix with Premium (Rs. 99)
-        </h3>
-        <p data-en="Auto-apply fixes + IRD tax report + Priority support" 
-           data-ne="स्वतः समाधान + IRD कर प्रतिवेदन + प्राथमिकता समर्थन">
-          Auto-apply fixes + IRD tax report + Priority support
-        </p>
-       <button onclick="checkout.show({amount: 9900})" class="btn-primary">
-  <span data-en="PAY WITH KHATI (Rs. 99)" data-ne="KHATI ले तिर्नुहोस् (रु. ९९)">PAY WITH KHATI (Rs. 99)</span>
-</button>
+        <h3>Get Full Fix with Premium (Rs. 99)</h3>
+        <p>Auto-apply fixes + IRD tax report + Priority support</p>
+        <button onclick="openKhalti()" class="btn-primary">PAY WITH KHATI</button>
+        
+        <!-- Viber Share Button -->
+        <div class="viber-share">
+          <a href="viber://forward?text=Check%20your%20Upwork%20profile:%20https://raazrana.github.io/profile-doctor" 
+             style="color:#fff; text-align:center; display:block; margin-top:15px;">
+            💬 Share on Viber
+          </a>
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="viber-share-container">
-  <p>साथीहरूलाई परिणाम साझा गर्नुहोस्:</p>
-  <a href="viber://forward?text=मेरो%20Upwork%20प्रोफाइल%20जाँच%20गर्नुहोस्!%0A%0A✅%20Kathmandu%20लाई%20'Kathmandu,%20Nepal%20(GMT%2B5:45)'%20मा%20बदल्छ%0A✅%20PayPal%20उल्लेख%20हटाउँछ%0A%0Aनिःशुल्क%20प्रयोग%20गर्नुहोस्:%20https://raazrana.github.io/profile-doctor" 
-     class="viber-btn">
-    <span>𝐕𝐢𝐛𝐞𝐫 मा साझा गर्नुहोस्</span>
-  </a>
-</div>
-
-  <!-- Khalti Payment Modal (Pre-configured for Nepal) -->
-  <script src="khalti-sandbox.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>
